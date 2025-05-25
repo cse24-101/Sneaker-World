@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart - Sneaker World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Side Nav (optional) -->
+<div id="sideNav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="Shop.html">Shop</a>
+  <a href="About.html">About</a>
+  <a href="Feedback.html">Feedback</a>
+</div>
+<span class="openbtn" onclick="openNav()"><img src="Images/toggle-icon.png" alt="Menu Icon"></span>
+
+<!-- Cart Section -->
+<section class="cart-section">
+  <div class="cart-container">
+    <h2>Your Shopping Cart 🛒</h2>
+    <table id="cartTable">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price (P)</th>
+          <th>Quantity</th>
+          <th>Total (P)</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cartItems">
+        <!-- Items will be inserted here via JS -->
+      </tbody>
+    </table>
+    <div class="cart-total">
+      <strong>Grand Total: P<span id="grandTotal">0.00</span></strong>
+    </div>
+<div class="buy-section">
+  <button id="buyBtn">Buy Now</button>
+  <p id="buyMessage" class="message"></p>
+</div>
+
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
