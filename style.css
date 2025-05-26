@@ -216,10 +216,22 @@ blockquote {
   padding: 10px 16px;
   border: none;
   border-radius: 6px;
-  top: 15px;
+  top: 75px;
   left: 20px;
   z-index: 1000;
-  position: fixed;
+  position: absolute;
+}
+
+/* Hide button when sidenav is open */
+.sidenav.open ~ .openbtn {
+  opacity: 0;
+  pointer-events: none; /* Prevents clicking on invisible button */
+}
+
+/* Show button when sidenav is closed */
+.sidenav:not(.open) ~ .openbtn {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .openbtn img {
@@ -257,8 +269,23 @@ blockquote {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
+  padding: 0px 20px; 
   
+/* Responsive Font Sizing */
+  font-size: clamp(1.2rem, 3vw, 1.8rem); /* Fluid typography */
+  line-height: 1.4; /* Better readability */
+}
+
+@media (max-width: 768px) {
+  .banner-text-center {
+    width: 95%; /* More space on mobile */
+    left: 50%; /* Keep centered */
+  }
   
+  .text-slide {
+    font-size: clamp(1rem, 4vw, 1.5rem); /* Larger on small screens */
+    padding: 0 15px;
+  }
 }
 
 .carousel-container {

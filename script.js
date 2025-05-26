@@ -1,9 +1,13 @@
 function openNav() {
-  document.getElementById("sideNav").style.width = "250px";
+  const sideNav = document.getElementById("sideNav");
+  sideNav.style.width = "250px";
+  sideNav.classList.add("open"); // Add this line
 }
 
 function closeNav() {
-  document.getElementById("sideNav").style.width = "0";
+  const sideNav = document.getElementById("sideNav");
+  sideNav.style.width = "0";
+  sideNav.classList.remove("open"); // Add this line
 }
 
 let textIndex = 0;
