@@ -857,9 +857,9 @@ button:hover {
 }
 
 .shoe-size label strong {
-  color: #FF5733; /* Change this to your desired color */
+  color: black;
 }
 
 .gallery-item label strong {
-  color: #FF5733; /* Replace with any color you want */
+  color: #FF5733; 
 }
