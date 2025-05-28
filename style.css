@@ -216,7 +216,7 @@ blockquote {
   padding: 10px 16px;
   border: none;
   border-radius: 6px;
-  top: 80px;
+  top: 80 upx;
   left: 4px;
   z-index: 1000;
   position: absolute;
@@ -232,6 +232,12 @@ blockquote {
 .sidenav:not(.open) ~ .openbtn {
   opacity: 1;
   pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .sidenav.open {
+    width: 180px; /* Smaller width on mobile */
+  }
 }
 
 .openbtn img {
@@ -359,7 +365,7 @@ blockquote {
       font-weight: 600;
       margin-bottom: 10px;
     }
-
+    
     .price {
       color: orange;
       font-weight: bold;
@@ -497,6 +503,12 @@ blockquote {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   padding: 40px 60px;
+}
+
+@media (min-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on wide screens */
+  }
 }
 
 .gallery-item {
@@ -842,4 +854,12 @@ button:hover {
   margin-top: 10px;
   font-weight: bold;
   color: #333;
+}
+
+.shoe-size label strong {
+  color: #FF5733; /* Change this to your desired color */
+}
+
+.gallery-item label strong {
+  color: #FF5733; /* Replace with any color you want */
 }

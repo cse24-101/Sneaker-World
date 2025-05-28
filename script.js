@@ -175,3 +175,9 @@ document.getElementById("buyBtn").addEventListener("click", function () {
   document.getElementById("buyMessage").textContent = "Thank you for your purchase!";
   document.getElementById("buyMessage").style.color = "green";
 });
+
+function addToCartWithSize(productName, price, sizeSelectId) {
+    const size = document.getElementById(sizeSelectId).value;
+    const fullProductName = `${productName} (Size ${size})`;
+    addToCart(fullProductName, price);
+}
