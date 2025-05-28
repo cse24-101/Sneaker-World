@@ -734,13 +734,21 @@ blockquote {
   }
 }
  
+
 .signup-container {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+@media (max-width: 480px) {
+  .signup-container {
+    width: 90%;
+    padding: 20px;
+  }
 }
 
 .signup-container h2 {
@@ -784,18 +792,7 @@ form button:hover {
   font-weight: bold;
 }
 
-/* signin.css */
 
-
-.signin-container {
-  background-color: whitesmoke;
-  padding: 40px 30px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  max-width: 400px;
-
-}
 
 form {
   display: flex;
@@ -857,9 +854,33 @@ button:hover {
 }
 
 .shoe-size label strong {
-  color: black;
+  color: #FF5733; /* Change this to your desired color */
 }
 
 .gallery-item label strong {
-  color: #FF5733; 
+  color: #FF5733; /* Replace with any color you want */
 }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 80px;
+  
+}
+
+@media (max-width: 480px) {
+  .signin-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
